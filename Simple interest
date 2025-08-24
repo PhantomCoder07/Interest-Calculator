@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int main,time;
+    float calc,interest,sum=0.0;
+    printf ("Enter the main amount: ");
+    scanf ("%d",&main);
+    printf ("Enter amount of interest: ");
+    scanf ("%f",&interest);
+    printf ("Enter time(annual): ");
+    scanf ("%d",&time);
+    calc=(float)(main*time*interest)/100;
+    sum= main+calc;
+    printf ("The amount of total interest in %d year: %.2f\n",time,calc);
+    printf ("The main amount after %d year: %.2f\n",time,sum);
+    return 0;
+}
